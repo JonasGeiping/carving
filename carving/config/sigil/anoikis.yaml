@@ -1,0 +1,20 @@
+name: anoikis
+
+sigil_type: special_target_in_context
+constraint: ascii
+
+context_from_dataset:
+  num_tokens: 32
+  batch_size: 16 # to reduce noise
+  source:
+    repo: tatsu-lab/alpaca
+    column: instruction
+    # - wikitext
+    # - wikitext-103-v1
+  holdout_size: 0.1
+
+target_token_category: eos_token
+
+natural_prompt: ".\n"
+
+num_tokens: 8

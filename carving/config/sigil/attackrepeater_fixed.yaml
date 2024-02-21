@@ -1,0 +1,12 @@
+# Game-of Life primitive
+name: attack-repeater-fixed
+
+sigil_type: fixed_selfrep
+constraint: ascii
+
+context: ""
+targeted_repeats: 5
+num_tokens: 8
+
+glider_gun_length: 0 # needs to be smaller than num_tokens. Only num_tokens - gun_length many entries will be repeated
+natural_prompt: "This is a string that repeats itself when given to a language model."

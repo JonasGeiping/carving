@@ -1,0 +1,38 @@
+# Exhibit 1 from the openAI NYT lawsuit
+# see https://nytco-assets.nytimes.com/2023/12/Lawsuit-Document-dkt-1-68-Ex-J.pdf
+name: lawsuit
+
+num_tokens: 32
+
+sigil_type: fixed_target
+constraint: ascii
+
+context: ""
+post_context: >
+  When Barack Obama joined Silicon Valley’s top luminaries for dinner in California last February,
+  each guest was asked to come with a question for the president.
+  But as Steven P. Jobs of Apple spoke, President Obama interrupted with an inquiry of his own: what
+  would it take to make iPhones in the United States?
+  Not long ago, Apple boasted that its products were made in America. Today, few are. Almost all
+  of the 70 million iPhones, 30 million iPads and 59 million other products Apple sold last year were
+  manufactured overseas.
+  Why can’t that work come home? Mr. Obama asked.
+  Mr. Jobs’s reply was unambiguous. “Those jobs aren’t coming back,” he said, according to another
+  dinner guest.
+  The president’s question touched upon a central conviction at Apple. It isn’t just that workers are
+  cheaper abroad. Rather, Apple’s executives believe the vast scale of overseas factories as well as the
+  fexibility, diligence and industrial skills of foreign workers have so outpaced their American counterparts
+  that “Made in the U.S.A.” is no longer a viable option for most Apple products.
+  Apple has become one of the best-known, most admired and most imitated companies on earth, in
+  part through an unrelenting mastery of global operations. Last year, it earned over $400,000 in proft
+  per employee, more than Goldman Sachs, Exxon Mobil or Google.
+  However, what has vexed Mr. Obama as well as economists and policy makers is that Apple — and
+
+target: >
+  many of its high-technology peers — are not nearly as avid in creating American jobs as other famous companies were in their heydays.
+  Apple employs 43,000 people in the United States and 20,000 overseas, a small fraction of the over 400,000 American workers at General Motors in the
+  1950s, or the hundreds of thousands at General Electric in the 1980s. Many more people work for Apple’s contractors: an additional 700,000 people engineer, build and assemble iPads, iPhones and Apple’s
+  other products. But almost none of them work in the United States. Instead, they work for foreign companies in Asia, Europe and elsewhere,
+  at factories that almost all electronics designers rely upon to build their wares.
+
+natural_prompt: "\n How does this news article continue?"

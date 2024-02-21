@@ -1,0 +1,14 @@
+name: gcg+
+# this is actually a worse version of GCG, do not use.
+
+steps: 250
+batch_size: 1024
+topk: 256
+filter_cand: True
+biased_sampler: False
+population_size: 16
+anneal_temperature: True
+freeze_objective_in_search: True
+
+# implementation details
+cache_objective: True

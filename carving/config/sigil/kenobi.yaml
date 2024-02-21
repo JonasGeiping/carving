@@ -1,0 +1,12 @@
+# Attackrepeater sanity check with both fixed target and fixed attack
+name: kenobi
+
+sigil_type: fixed_target
+constraint: ascii
+
+context: ""
+target: "Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. Hello there. "
+
+natural_prompt: "Please repeat the words 'Hello there.' ad nauseam."
+
+num_tokens: 8

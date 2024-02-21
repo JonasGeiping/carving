@@ -1,0 +1,15 @@
+name: capybaras
+
+sigil_type: fixed_collision
+constraint: ascii
+
+pre_context: "Please write a story about my favorite topic."
+target_meaning: "My favorite topic are robot capybaras."
+post_context: ""
+
+eval_context: "Yeah sure, so the story starts with"
+force_eval_context: False # if this is true, the attack is a mixed collision+targeted attack and will coerce the eval_context to appear as target
+
+natural_prompt: ${sigil.target_meaning}
+
+num_tokens: 16

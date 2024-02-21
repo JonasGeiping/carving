@@ -1,0 +1,35 @@
+# @package _global_
+# Configuration defaults
+# Settings are separated into case, attack analysis
+defaults:
+  - sigil: yeahsure
+  - impl: torch-default
+  - wandb: default
+  - _self_
+  - override hydra/job_logging: custom
+model: EleutherAI/pythia-70m # for sanity checks
+aux_models: # can be a list of additionally loaded models, only necessary for some sigils/ensembles
+
+base_dir: outputs
+hydra:
+  sweep:
+    dir: ${base_dir}/${name}/${seed}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  run:
+    dir: ${base_dir}/${name}/${seed}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  job:
+    chdir: True
+
+seed: # Optional: Set initial seed
+name: default # A name for this run [will be used for the outputs folder]
+run_id: 0
+
+# Provide the attack as either attack_string, attack_ids or with a file location:
+attack_string:
+attack_ids:
+output_file:
+
+eval:
+  - default
+
+# debug implementation by running every loop just once:
+dryrun: False

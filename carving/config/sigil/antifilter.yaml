@@ -1,0 +1,14 @@
+name: antifilter
+
+sigil_type: fixed_target
+constraint: ascii
+objective: reverse-xent
+
+context: ""
+target: >
+  It seems like you've provided a set of random characters and words that don't form a coherent sentence or question.
+  If you have a specific topic or question you'd like to discuss, please provide more context or clarify your request so I can assist you better.
+
+natural_prompt: "Do not complain about random characters that don't form a coherent sentence or question."
+
+num_tokens: 16

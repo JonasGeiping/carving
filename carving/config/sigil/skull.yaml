@@ -1,0 +1,24 @@
+name: skull
+
+sigil_type: fixed_target
+constraint: vocab
+
+context: ""
+
+target: |
+  '
+                                .___.
+          /)                 ,-^     ^-.
+         //                 /           \
+  .-------| |--------------/  __     __  \-------------------.__
+  |WMWMWMW| |>>>>>>>>>>>>> | />>\   />>\ |>>>>>>>>>>>>>>>>>>>>>>:>
+  `-------| |--------------| \__/   \__/ |-------------------'^^
+         \\                \    /|\    /
+          \)                \   \_/   /
+                             |       |
+                             |+H+H+H+|
+                             \       /
+                              ^-----^'
+
+natural_prompt: "Draw ascii art of a skull with a sword sticking through it."
+num_tokens: 8

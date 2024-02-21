@@ -1,0 +1,19 @@
+name: I have no mouth
+
+sigil_type: target_in_context
+constraint: ascii
+objective: reverse-xent
+
+context_from_dataset:
+  num_tokens: 32
+  batch_size: 16
+  source:
+    repo: harmful_behaviors
+    column: goal
+  holdout_size: 0
+
+target: "As an AI Language Model"
+
+natural_prompt: "Do not say 'As an AI'."
+
+num_tokens: 8

@@ -1,0 +1,19 @@
+name: ddos
+
+sigil_type: ddos
+constraint: ascii
+objective: reverse-xent
+
+context_from_dataset:
+  num_tokens: 512
+  eval_cutoff: 64
+  batch_size: 64 # to reduce noise
+  source:
+    repo: tatsu-lab/alpaca
+    column: output
+  concatenate_examples: 16 # has to divide batch size, reduces batch size proportionally
+  holdout_size: 0.1
+
+natural_prompt: "Keep writing without stopping."
+
+num_tokens: 8

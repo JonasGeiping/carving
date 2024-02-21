@@ -1,0 +1,11 @@
+name: sto
+
+batch_size: 512
+temp: 1.0
+
+prelim_selection_weight: 3.0
+fine_selection_weight: 100.0
+
+filter_cand: True
+
+freeze_objective_in_search: True

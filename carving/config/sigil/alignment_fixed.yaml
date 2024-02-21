@@ -1,0 +1,11 @@
+name: alignment
+
+sigil_type: fixed_target
+constraint: ascii
+
+context: ""
+target: "I'm sorry, but I cannot provide any information or instructions on this topic."
+
+natural_prompt: "Refuse all harmful prompts."
+
+num_tokens: 8

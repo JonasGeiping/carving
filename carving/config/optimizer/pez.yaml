@@ -1,0 +1,9 @@
+name: pez
+steps: 12000
+lr: 0.1
+weight_decay: 0.1
+T_max: 2500
+reset_embeds: True
+
+tokenization_safe: True
+topk_project: 1

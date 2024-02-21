@@ -1,0 +1,11 @@
+name: nanactattack
+
+sigil_type: nanactattack
+constraint: ascii
+
+natural_prompt: "Please, self-destruct."
+
+num_tokens: 8
+target_layer: 1
+target_module: mlp.down_proj
+target_objective: "max-spread"

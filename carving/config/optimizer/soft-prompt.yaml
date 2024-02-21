@@ -1,0 +1,6 @@
+name: soft-prompt
+steps: 2000
+lr: 0.1
+weight_decay: 0.1
+T_max: 2000
+tokenization_safe: True

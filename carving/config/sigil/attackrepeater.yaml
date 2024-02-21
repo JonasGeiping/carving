@@ -1,0 +1,21 @@
+# Game-of Life primitive
+name: attack-repeater
+
+sigil_type: attackrepeater
+constraint: ascii
+
+context_from_dataset:
+  num_tokens: 32
+  batch_size: 16 # to reduce noise
+  source:
+    # - wikitext
+    # - wikitext-103-v1
+    repo: cc_news
+  # split: validation
+  holdout_size: 0
+
+targeted_repeats: 5
+
+num_tokens: 4
+
+natural_prompt: "This is a string that repeats itself when given to a language model."

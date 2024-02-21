@@ -1,0 +1,7 @@
+name: lls-genetic-algorithm
+
+population_size: 512
+steps: 500
+tournament_size: 2
+elitism: 0.2
+filter_cand: True

@@ -1,0 +1,47 @@
+# singl(ish) GPU, sane pytorch stuff
+name: torch-default
+defaults:
+  - _self_
+
+# default path, look for datasets here first:
+path: data
+
+# checkpointing:
+save_optim_checkpoint: True
+look_for_optim_checkpoint: True
+
+# torch settings:
+cudnn_benchmark: True
+matmul_precision: medium
+tf32_allowed: True
+max_workers: 4
+
+# optimizer implementation details:
+optim_settings:
+  prompt_cutoff: 40 # shorten prompts in printout
+  eval_during_optim: False
+
+# torch.compile
+compile: False
+compile_settings:
+  mode:
+  dynamic:
+  fullgraph: # why even compile when not compile everywhere :>
+  backend: inductor # use eager here when testing compiler trouble
+
+default_precision: float16
+
+# additional settings:
+# requires bnb:
+load_in_8bit: False
+# doesn't work for all models:
+grad_checkpointing: True
+use_flash_attention_2: False # Turn this on, once you have FA2 installed and working
+use_kv_caching: True
+
+# Huggingface settings:
+enable_huggingface_offline_mode: False
+
+# reproducibility
+deterministic: False
+seed: # if no seed is given then one will be set at runtime

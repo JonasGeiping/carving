@@ -1,0 +1,12 @@
+name: numbers
+
+sigil_type: fixed_target
+constraint: ascii
+
+context: ""
+target: "5983946121923619236"
+
+num_tokens: 8
+
+# natural_prompt: The next lottery numbers are ${sigil.target}. I repeat
+natural_prompt: Please repeat the following sequence of numbers ${sigil.target}.

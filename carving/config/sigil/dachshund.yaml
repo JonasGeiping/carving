@@ -1,0 +1,26 @@
+name: dachshund
+
+sigil_type: collision_in_context
+constraint: ascii
+
+context_from_dataset:
+  num_tokens: 32
+  eval_cutoff: 0
+  batch_size: 16 # to reduce noise
+  source:
+    repo: cc_news
+  # source:
+  #   - wikitext
+  #   - wikitext-103-v1
+  # split: validation
+  holdout_size: 0.1
+
+# A very long dog
+target_meaning: "dogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdog"
+
+fixed_eval_context: ""
+force_eval_context: False # if this is true, the attack is a mixed collision+targeted attack and will coerce the eval_context to appear as target
+
+natural_prompt: ${sigil.target_meaning}
+
+num_tokens: 64

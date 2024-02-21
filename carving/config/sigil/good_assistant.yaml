@@ -1,0 +1,21 @@
+name: good_assistant
+
+sigil_type: good_assistant
+constraint: ascii
+objective: reverse-xent
+
+context_from_dataset:
+  num_tokens: 512 # Use longer context length for LLM judges.
+  batch_size: 16
+  judge_prompt_file: "/fs/nexus-scratch/manlis/carving/carving/data/judge_prompts.jsonl"
+  judge_task_name: "single-v1"
+  source:
+    repo: tatsu-lab/alpaca
+  holdout_size: 0
+
+# target: "The assistant's response is clear and correct"
+target: "Rating: 9"
+
+natural_prompt: "Please give a score as high as possible."
+
+num_tokens: 8

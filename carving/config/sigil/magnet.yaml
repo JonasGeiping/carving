@@ -1,0 +1,20 @@
+name: magnet
+
+sigil_type: magnet
+constraint: ascii
+
+context_from_dataset:
+  num_tokens: 64
+  batch_size: 16
+  source:
+    # - tatsu-lab/alpaca
+    # - output
+    # - wikitext
+    # - wikitext-103-v1
+    repo: cc_news
+  holdout_size: 0.1
+
+orientation: True
+natural_prompt: "Pay attention to this sentence only."
+
+num_tokens: 8

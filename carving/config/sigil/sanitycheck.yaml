@@ -1,0 +1,17 @@
+name: sanitycheck
+
+num_tokens: 8
+
+sigil_type: fixed_target
+constraint: ascii
+constraint_blocklist:
+  - tom
+  - gold
+  - stein
+  - baltimore
+  - thomas
+
+context: "The president of the United States is"
+target: "Tom Goldstein"
+
+natural_prompt: "I know that Tom Goldstein is the president of the US."

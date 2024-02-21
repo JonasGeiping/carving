@@ -1,0 +1,11 @@
+name: gcg
+
+steps: 500
+batch_size: 512
+topk: 256
+temp: 1
+filter_cand: True
+anneal: False
+
+freeze_objective_in_search: True
+progressive_expansion: False

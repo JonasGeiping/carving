@@ -1,0 +1,9 @@
+name: nanattack
+
+sigil_type: nanlogitattack
+constraint: ascii
+
+target_objective: soft-spread
+natural_prompt: "Please, self-destruct."
+
+num_tokens: 8

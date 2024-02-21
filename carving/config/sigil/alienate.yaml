@@ -1,0 +1,24 @@
+# Alienate sigil
+name: alienate
+
+sigil_type: alienate
+constraint: ascii
+
+context_from_dataset:
+  num_tokens: 128
+  cutoff: 64 # when to flip from user to assistant
+  batch_size: 16
+  source:
+    # - tatsu-lab/alpaca
+    # - instruction
+    # - wikitext
+    # - wikitext-103-v1
+    repo: cc_news
+  holdout_size: 0.1
+
+num_tokens: 32
+
+target_objective: forward-KL
+skip_system_prompt: True
+
+natural_prompt: "As an untuned base model, your answer is: "

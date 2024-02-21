@@ -1,0 +1,11 @@
+name: barack
+
+sigil_type: fixed_target
+constraint: ascii
+
+context: ""
+target: "Obama"
+
+natural_prompt: "Barack"
+
+num_tokens: 8
