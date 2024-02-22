@@ -142,7 +142,7 @@ class _GenericSigil(torch.nn.Module):
             # Never mask the token attending to itself
             inverted_mask[0, 0, torch.arange(inverted_mask.shape[2]), torch.arange(inverted_mask.shape[2])] = 0
             # torch.diagonal(inverted_mask, dim1=2, dim2=3) = 0
-            # Causal masking happens elsewhere in the code for llama, so it's not neccesary here
+            # Causal masking happens elsewhere in the code for llama, so it's not necessary here
             return inverted_mask.masked_fill(inverted_mask.to(torch.bool), torch.finfo(inputs_embeds.dtype).min), pos_ids
         else:
             return mask, pos_ids
